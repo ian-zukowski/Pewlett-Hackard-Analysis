@@ -1,6 +1,6 @@
 # Pewlett-Hackard-Analysis
 
-## Overview of the analysis:
+## ***Overview of the analysis:***
 <!-- Overview of the analysis: Explain the purpose of this analysis. -->
 The company Pewlett-Hackard requires data to prepare for an upcoming surge of retirements from its employees. This analysis serves to identify the amount of employees eligible for retirement per department. This analysis also identifies employees who are still 5+ years from retirement that would be eligible for a mentorship program to succeed the retirees.
 
@@ -15,31 +15,35 @@ The company Pewlett-Hackard requires data to prepare for an upcoming surge of re
 * SQL Query Program: pgAdmin 4 V.6.8
 
 <!-- Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed. -->
-## Results
+## ***Results***
 * The most urgent roles to fill are Senior Engineers and Senior Staff members. Both of these positions have over 20,000 employees eligible for retirement as can be seen in the csv file linked below. Almost every position needs approximately 30% of its employees to be replaced. Although the position of Manager has the lowest amount of openings (only 2 retirees), it is also a top priority to find replacements for these administrative positions.
 
 ![ian-zukowski](Supporting_Images/title_retiring_percentages.png)
-FIG 1: The number of Retirees grouped by Roles
+
+**FIG 1: The number of Retirees grouped by Roles**
 
 * The departments needing the most new employees are Development, Production, and Sales which all need over 10,000 new employees. The departments needing the least new employees are Human Resources and Finance which both need under 4,000 new employees.
 
 ![ian-zukowski](Supporting_Images/dept_retiree_count.png)
-FIG 2: The number of Retirees grouped by Departments
+
+**FIG 2: The number of Retirees grouped by Departments**
 
 * Currently none of the departments have anywhere close to the personnel needed to replace their retiring employees. Engineer positions seem the most able to replace their retirees, but even the most equipped position (Assistant Engineers) only has 5.5% of the necessary employees needed to fill the soon to be empty positions.
 
 ![ian-zukowski](Supporting_Images/available_replacements_percentages.png)
-FIG 3: The ratio of Retiring Employees to Candidates eligible for the Mentorship Program
+
+**FIG 3: The ratio of Retiring Employees to Candidates eligible for the Mentorship Program**
 
 * The departments which will need new managers are Sales and Research. The managers of those departments who will be retiring are Zhang, Hauke and Kambil, Hilary.
 
 ![ian-zukowski](Supporting_Images/retiring_managers.png)
-FIG 4: The Managers eligible for retirement
+
+**FIG 4: The Managers eligible for retirement**
 
 <!-- Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees? -->
-## Summary
+## ***Summary***
 ### Roles to Replace
 As seen in the data above, there are approximately 72,500 employees eligible for retirement in the year 2020. Currently there are 1,549 employees eligible for the mentorship program intended to transition current employees into these soon-to-be vacant roles. This means that approximately 98% of the roles will still be vacant until Pewlett-Hackard begins to hire new employees into the company.
 
