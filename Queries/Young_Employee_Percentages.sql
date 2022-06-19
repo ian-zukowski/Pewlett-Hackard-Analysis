@@ -1,6 +1,26 @@
-select * from young_employee_count yec;
-select * from total_employee_count tec;
-select * from actually_young_employee_count ayec;
+drop table if exists total_employee_count;
+select count(e.emp_no)
+into total_employee_count
+from employees e
+join dept_emp de on e.emp_no = de.emp_no
+where de.to_date = '9999-01-01';
+
+drop table if exists young_employee_count;
+select count(first_name)
+into young_employee_count
+from employees e
+join dept_emp de on e.emp_no = de.emp_no
+where (e.birth_date between '1965-01-01' AND '2020-01-01')
+and de.to_date = '9999-01-01';
+select * from young_employee_count;
+
+drop table if exists actually_young_employee_count;
+select count(first_name)
+into actually_young_employee_count
+from employees e
+join dept_emp de on e.emp_no = de.emp_no
+where (e.birth_date between '1966-01-01' AND '2020-01-01')
+AND (de.to_date = '9999-01-01');
 
 drop table if exists young_employee_percentage;
 
